@@ -49,7 +49,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-           <button type="button" class="hero-btn btn">Заказать услугу</button>
+           <button type="button" class="hero-btn btn" data-modal-open >Заказать услугу</button>
         </div>
         </section>
     <!-- Features -->
@@ -104,9 +104,25 @@
         <div class="container">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
-            <li class="item"><img src="./img/box1.jpg" alt="Десктопные приложения" width="370" height="294"></li>
-            <li class="item"><img src="./img/box2.jpg" alt="Мобильные приложения" width="370" height="294"></li>
-            <li class="item"><img src="./img/box3.jpg" alt="Дизайнерские решения" width="370" height="294"></li>           
+            <li class="work-item">
+                <div class="work-box">
+                    <img src="./img/box1.jpg" alt="Десктопные приложения" width="370" height="294">
+                    <p class="text-img">Десктопные приложения</p>
+                    </div>
+                    </li>
+                
+            <li class="work-item">
+                <div class="work-box">
+                    <img src="./img/box2.jpg" alt="Мобильные приложения" width="370" height="294">
+                    <p class="text-img">Мобильные приложения</p>
+                </div>
+            </li>
+            <li class="work-item">
+                <div class="work-box">
+                    <img src="./img/box3.jpg" alt="Дизайнерские решения" width="370" height="294">
+                    <p class="text-img">Дизайнерские решения</p>
+                </div>
+            </li>           
         </ul>
         </div>
     </section>
@@ -384,5 +400,15 @@
     </div>
 </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="btn-modal-close"data-modal-close>
+<svg class="btn-mod-icon"width="18" height="18"> 
+    <use href="./img/icons.svg/symbol-defs.svg#icon-Vector" ></use>
+</svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
